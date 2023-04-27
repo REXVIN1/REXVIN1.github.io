@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad00</title>
+    <link rel="stylesheet" type="text/css" href="estilo2.css.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="img/main/favicon.png">
+    <script>
+      function enviar_email(){
+        var nombre = formulario.nombre_email.value;
+        var apellido = formulario.apellido_email.value;
+        var mensaje = formulario.mensaje_email.value;
+
+        cadena = "Nombre: "+nombre+'%0D%0A';
+        cadena = cadena +"Apellido: "+apellido+'%0D&0A';
+        cadena = cadena +"Mensaje: "+mensaje+'%0D&0A';
+
+        window.location.href = "mailto:kgomval118@g.educaand.es?subject=Envio de Cuestionario&body="+cadena;
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <a href="https://github.com/REXVIN1">Sobre mi</a>
+      <a href="https://github.com/REXVIN1?tab=repositories">Github</a>
+      <a href="https://www.instagram.com/kevin_g0mez/">Contacto</a>
+    </nav>
+    <header id="cabecera">
+      <h1>PORFOLIO</h1>
+      <hr>
+      <h2>ALUMNO</h2>
+      <img src="img/imagen.jpg" alt="foto">
+      <br>
+      <blockquote>Kevin Gómez Valderas</blockquote>
+    </header>
+    <main>
+      <section id="personal">
+        <article id="sobre-mi">
+          <header>
+              <img src="img/sobre-mi.png" alt="Sobre_mi_imagen">
+              <h2>Sobre mi</h2>
+          </header>
+          <p>Mi nombre es Kevin Gómez Valderas tengo 20 años y vivo en Granada aunque, nací en Badalona/Barcelona. Me gusta los videojuegos, escuchar música y tocar el piano. Actualmente estoy cursando formación profesional de informática y me gustaría algún dia poder crear un juego.</p>
+        </article>
+        <article id="formacion">
+          <header>
+            <h2>FORMACIÓN</h2>
+            <img src="img/formacion.png" alt="formacion_imagen">
+          </header>
+          <p>Actualmente estoy cursando el segundo trimestre del grado superior de formación profesional de informática. Durante el tiempo cursado he aprendido lo básico para poder programar, crear paginas webs y conocer mas sobre el mundo de la tecnología</p>
+        </article>
+      </section>
+      <section id="skills">
+        <article id="hard-skills">
+          <header>
+            <h2>Hard-Skills</h2>
+            <img src="img/hard-skills.png" alt="hard skills_imagen">
+          </header>
+          <ul>
+            <li>Frontend</li>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            <li>Backend</li>
+              <ul>
+                <li>Java</li>
+                <li>PHP</li>
+              </ul>
+          </ul>
+        </article>
+        <article id="soft-skills">
+          <header>
+            <h2>Soft-Skills</h2>
+            <img src="img/soft-skills.png" alt="Soft_skills_imagen">
+          </header>
+          <ul>
+            <li>Liderazgo</li>
+            <li>Trabajo en equipo</li>
+            <li>Trabajo en solitario</li>
+          </ul>
+        </article>
+      </section>
+      <section id="contacto">
+        <article id="email">
+          <header>
+            <h2>Enviarme un mensaje</h2>
+            <img src="img/mensaje.png" alt="mensaje_imagen">
+          </header>
+          <fieldset>
+            <legend>FORMULARIO</legend>
+            <form method="post" id=formulario>
+            <h2>Introduzca su nombre completo y el mensaje a enviar:</h2><br>            
+              <label>
+                Nombre:  <input type="text" placeholder=" Introduze tu nombre...." name="nombre_email"></label><br><br>
+              <label>
+                Apellido:  <input type="text" placeholder=" Introduze tu apellido...." name="apellido_email"></label><br><br>
+              <label>
+                <p>Mensaje:</p>
+                <input type="text" placeholder=" Introduze tu mensaje...." name="mensaje_email">
+              </label><br><br>
+              <button type="submit" name="enviar2" onclick="enviar_email();">Enviar</button>
+            </form>
+          </fieldset>          
+        </article>
+        <article id="social-networks">
+          <header>
+            <h2>Contacto</h2>
+            <img src="img/contacto.png" alt="contacto_imagen">
+          </header>
+          <p>Teléfono: 601479874<br>Email: kgomval118@g.educaand.es<br>Centro: <a href="https://www.ieshlanz.es/">IES Hermenegildo Lanz</a></p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <section id="footer-izq">
+        <p>IES Hermenegildo Lanz</p>
+      </section>
+      <section id="footer-centro">
+        <p>España/Granada</p>
+      </section>
+      <section id="footer-dcha">
+        <p>&copy;Kevin Gómez Valderas</p>
+      </section>
+    </footer>
+  </body>
+</html>
